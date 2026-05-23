@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Trabajo destacado | NeoPulsor</title>
+
+    <meta
+      name="description"
+      content="Galería de trabajos destacados de NeoPulsor: vídeo, fotografía y producción audiovisual para marcas, artistas, eventos, bodas, deportes y dron."
+    />
+
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="recursos/logo/favicon_neopulsor.png"
+    />
+  </head>
+
+  <body>
+    <!-- CABECERA -->
+    <header class="cabecera">
+      <div class="contenedor cabecera__contenido">
+        <a
+          href="index.html#inicio"
+          class="cabecera__logo"
+          aria-label="Ir al inicio"
+        >
+          <img src="recursos/logo/logo_neopulsor_blanco.png" alt="NeoPulsor" />
+        </a>
+
+        <nav class="cabecera__nav" aria-label="Navegación principal">
+          <a href="index.html#inicio">Inicio</a>
+          <a href="index.html#sobre_nosotros">Sobre nosotros</a>
+          <a href="index.html#portfolio">Trabajos</a>
+          <a href="index.html#contacto">Contacto</a>
+        </nav>
+
+        <button
+          class="cabecera__boton_menu"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="pagina_trabajo">
+      <!-- HERO TRABAJO -->
+      <section class="trabajo_hero">
+        <div class="contenedor trabajo_hero__contenido">
+          <p class="seccion__etiqueta" id="trabajo_categoria">
+            Trabajo destacado
+          </p>
+
+          <h1 id="trabajo_titulo">Cargando trabajo...</h1>
+
+          <p id="trabajo_descripcion">
+            Estamos preparando la información de este trabajo.
+          </p>
+
+          <a href="index.html#portfolio" class="trabajo_hero__volver">
+            ← Volver a trabajos
+          </a>
+        </div>
+      </section>
+
+      <!-- VÍDEOS -->
+      <section class="seccion seccion--clara trabajo_bloque">
+        <div class="contenedor">
+          <div class="trabajo_bloque__cabecera">
+            <p class="seccion__etiqueta">Vídeos</p>
+            <h2>Vídeos destacados</h2>
+            <p>
+              Una selección breve de piezas audiovisuales relacionadas con este
+              tipo de proyecto.
+            </p>
+          </div>
+
+          <div class="trabajo_videos" id="trabajo_videos"></div>
+        </div>
+      </section>
+
+      <!-- FOTOS -->
+      <section
+        class="seccion seccion--clara trabajo_bloque trabajo_bloque--galeria"
+      >
+        <div class="contenedor">
+          <div class="trabajo_bloque__cabecera">
+            <p class="seccion__etiqueta">Galería</p>
+            <h2>Fotografías destacadas</h2>
+            <p>
+              Una muestra visual del estilo, la cobertura y el tipo de contenido
+              que desarrollamos en esta área.
+            </p>
+          </div>
+
+          <div class="trabajo_galeria" id="trabajo_galeria"></div>
+
+          <div class="lightbox" id="lightbox" aria-hidden="true">
+            <button
+              class="lightbox__cerrar"
+              id="lightbox_cerrar"
+              aria-label="Cerrar imagen"
+            >
+              ×
+            </button>
+
+            <button
+              class="lightbox__flecha lightbox__flecha--izquierda"
+              id="lightbox_anterior"
+              aria-label="Imagen anterior"
+            >
+              ‹
+            </button>
+
+            <img src="" alt="" class="lightbox__imagen" id="lightbox_imagen" />
+
+            <button
+              class="lightbox__flecha lightbox__flecha--derecha"
+              id="lightbox_siguiente"
+              aria-label="Imagen siguiente"
+            >
+              ›
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA FINAL -->
+      <section class="cta_final">
+        <div class="contenedor cta_final__contenido">
+          <p class="seccion__etiqueta">Hablemos de tu proyecto</p>
+
+          <h2>¿Quieres una producción audiovisual como esta?</h2>
+
+          <p>
+            Cuéntanos qué tienes en mente y vemos la mejor forma de darle
+            imagen, ritmo y emoción.
+          </p>
+
+          <div class="cta_final__acciones">
+            <a href="index.html#contacto" class="boton boton--principal">
+              Pedir presupuesto
+            </a>
+
+            <a
+              href="mailto:neopulsor@gmail.com"
+              class="boton boton--secundario"
+            >
+              Escribir por email
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="contenedor footer__contenido">
+        <a href="index.html#inicio" class="footer__logo">
+          <img src="recursos/logo/logo_neopulsor_blanco.png" alt="NeoPulsor" />
+        </a>
+
+        <div class="footer__contacto">
+          <a href="mailto:neopulsor@gmail.com">neopulsor@gmail.com</a>
+        </div>
+
+        <nav class="footer__legal" aria-label="Enlaces legales">
+          <a href="legal/aviso_legal.html">Aviso legal</a>
+          <a href="legal/politica_privacidad.html">Política de privacidad</a>
+          <a href="legal/politica_cookies.html">Política de cookies</a>
+          <a href="legal/terminos_condiciones.html">Términos y condiciones</a>
+          <a href="legal/declaracion_accesibilidad.html">Accesibilidad</a>
+          <a href="legal/sitemap.html">Sitemap</a>
+        </nav>
+
+        <p class="footer__copy">
+          © 2026 NeoPulsor. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/trabajos.js"></script>
+  </body>
+</html>
