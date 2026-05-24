@@ -1,22 +1,3 @@
-function cargarServiciosExternos() {
-  const avisoResenasGoogle = document.getElementById("aviso_resenas_google");
-
-  if (avisoResenasGoogle) {
-    avisoResenasGoogle.style.display = "none";
-  }
-
-  if (document.querySelector("script[data-elfsight]")) {
-    return;
-  }
-
-  const scriptElfsight = document.createElement("script");
-  scriptElfsight.src = "https://elfsightcdn.com/platform.js";
-  scriptElfsight.async = true;
-  scriptElfsight.setAttribute("data-elfsight", "true");
-
-  document.body.appendChild(scriptElfsight);
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   /* ============================= */
   /* MENÚ MÓVIL */
@@ -162,6 +143,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const checkboxTerceros = document.getElementById("cookies_terceros");
 
   function cargarServiciosExternos() {
+    const avisoResenasGoogle = document.getElementById("aviso_resenas_google");
+
+    if (avisoResenasGoogle) {
+      avisoResenasGoogle.style.display = "none";
+    }
+
     if (document.querySelector("script[data-elfsight]")) {
       return;
     }
